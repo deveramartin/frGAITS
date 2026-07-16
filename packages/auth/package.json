@@ -1,0 +1,33 @@
+{
+  "name": "@gaits/auth",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts",
+    "./server": "./src/server.ts",
+    "./middleware": "./src/middleware.ts",
+    "./hooks": "./src/hooks/index.ts",
+    "./guards": "./src/guards/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.49.1"
+  },
+  "peerDependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@gaits/config": "workspace:*",
+    "@gaits/types": "workspace:*",
+    "@types/react": "^19.0.7",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extends": "@gaits/config/typescript/nextjs",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@gaits/ui": ["../../packages/ui/src"],
+      "@gaits/ui/*": ["../../packages/ui/src/*"],
+      "@gaits/types": ["../../packages/types/src"],
+      "@gaits/utils": ["../../packages/utils/src"],
+      "@gaits/auth": ["../../packages/auth/src"],
+      "@gaits/database": ["../../packages/database/src"],
+      "@gaits/ai": ["../../packages/ai/src"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

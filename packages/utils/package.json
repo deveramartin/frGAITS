@@ -1,0 +1,22 @@
+{
+  "name": "@gaits/utils",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./validators": "./src/validators.ts",
+    "./formatters": "./src/formatters.ts",
+    "./constants": "./src/constants.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@gaits/types": "workspace:*",
+    "typescript": "^5.7.3"
+  }
+}

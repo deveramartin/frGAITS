@@ -1,0 +1,3 @@
+{
+  "extends": ["@gaits/config/eslint/next"]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@gaits/types",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./auth": "./src/auth.ts",
+    "./database": "./src/database.ts",
+    "./api": "./src/api.ts",
+    "./gamification": "./src/gamification.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

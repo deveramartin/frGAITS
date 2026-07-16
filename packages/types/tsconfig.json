@@ -1,0 +1,10 @@
+{
+  "extends": "@gaits/config/typescript/library",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@gaits/types/*": ["./src/*"]
+    }
+  },
+  "include": ["src"]
+}
